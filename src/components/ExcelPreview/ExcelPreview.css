@@ -1,0 +1,100 @@
+.excel-preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.excel-preview-content {
+    width: 90%;
+    height: 90%;
+    background-color: #0a2a55;
+    border: 2px solid #66a6ff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.excel-preview-header {
+    width: 100%;
+    height: 46px;
+    background: rgba(23, 50, 109, 0.66);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.excel-preview-title {
+    font-size: 19px;
+    color: white;
+}
+
+.excel-preview-body {
+    flex: 1;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.handsontable-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Hide Handsontable license info */
+.hot-display-license-info {
+    display: none !important;
+}
+
+/* Custom scrollbar styles */
+.wtHolder {
+    position: relative !important;
+    z-index: 10000 !important;
+    overflow: auto !important;
+    touch-action: auto !important;
+}
+
+.wtHolder::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.wtHolder::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 5px;
+    height: 260px;
+    width: 2px;
+}
+
+.wtHolder::-webkit-scrollbar-thumb {
+    background: #55bffa;
+    border-radius: 5px;
+}
+
+.wtHolder::-webkit-scrollbar-thumb:hover {
+    background: #55bffa;
+}
